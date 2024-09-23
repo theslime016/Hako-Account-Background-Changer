@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hako Background Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    textarea {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Thay đổi Background</h2>
+
+  <label for="image-url">URL Ảnh:</label>
+  <input type="text" id="image-url" placeholder="Nhập URL ảnh">
+
+  <h3>Chọn tỉ lệ khung hình:</h3>
+  <label for="aspect-ratio">Tỉ lệ:</label>
+  <select id="aspect-ratio">
+    <option value="16:9">16:9</option>
+    <option value="4:3">4:3</option>
+    <option value="1:1">1:1</option>
+  </select>
+
+  <h3>Quản lý các URL mà extension có thể truy cập</h3>
+  <label for="websites">Nhập danh sách URL, mỗi dòng một URL:</label>
+  <textarea id="websites" placeholder="Nhập danh sách các trang web"></textarea>
+
+  <button id="save-button">Lưu thay đổi</button>
+  <button id="reset-button">Reset về mặc định</button>
+
+  <script src="options.js"></script>
+</body>
+</html>
